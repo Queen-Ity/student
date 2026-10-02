@@ -439,6 +439,12 @@ button[hidden] {
 	}
 }
 
+@media (max-width: 900px) {
+	.container {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
+
 @media (max-width: 760px) {
 	.login-screen {
 		width: min(620px, calc(100% - 32px));
@@ -518,6 +524,17 @@ button[hidden] {
 	.form-section,
 	.students-section {
 		padding: 17px;
+	}
+
+	.students-section > h2 {
+		display: block;
+		margin: 0 0 12px;
+	}
+
+	#logoutButton,
+	#loadStudents {
+		min-height: 40px;
+		margin-bottom: 14px;
 	}
 
 	#studentForm {
